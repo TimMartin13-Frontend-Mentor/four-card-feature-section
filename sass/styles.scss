@@ -1,0 +1,21 @@
+$clr-red: hsl(0, 78%, 62%);
+$clr-cyan: hsl(180, 62%, 55%);
+$clr-orange: hsl(34, 97%, 64%);
+$clr-blue: hsl(212, 86%, 64%);
+$clr-drk-blue: hsl(234, 12%, 34%);
+$clr-grey-blue: hsl(229, 6%, 66%);
+$clr-lgt-grey: hsl(0, 0%, 98%);
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
