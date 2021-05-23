@@ -1,12 +1,140 @@
 *, *::before, *::after {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
 }
 
 body {
-  font-size: 15px;
-  font-family: "Poppins", sans-serif;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  margin: 5rem 0;
+  min-height: 100vh;
 }
 
+h2 {
+  color: #4c4e61;
+}
+
+p {
+  color: #a3a5ae;
+}
+
+.container {
+  padding: 0 2rem;
+  margin: auto;
+  max-width: 375px;
+}
+
+header {
+  margin: 5em auto;
+  text-align: center;
+}
+header .header__regular {
+  font-size: 1.6rem;
+  font-weight: 200;
+}
+header .header__bold {
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding-bottom: 0.5em;
+}
+header p {
+  font-size: 0.96rem;
+  letter-spacing: 0.3px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  margin-bottom: 2em;
+  padding: 2em 2em;
+  border-radius: 0.5rem;
+  box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+}
+.card__title {
+  font-size: 1.3rem;
+  margin: 0 0 0.5rem;
+}
+.card__copy {
+  font-size: 0.85rem;
+  letter-spacing: 0.2px;
+  line-height: 1.75;
+}
+.card .img-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.card .img-container .card__img {
+  height: 6rem;
+  width: auto;
+  padding: 2em 0 0 2em;
+}
+
+.supervisor {
+  border-top: 5px solid #49CFD0;
+}
+
+.team-builder {
+  border-top: 5px solid #D55C61;
+}
+
+.karma {
+  border-top: 5px solid #EDAE61;
+}
+
+.calculator {
+  border-top: 5px solid #589DEB;
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    align-items: flex-start;
+    margin-bottom: unset;
+    min-height: unset;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  header {
+    margin: 0 0 4.35rem;
+  }
+  header .header__regular,
+header .header__bold {
+    font-size: 2.33rem;
+    line-height: 1.5;
+  }
+  header p {
+    width: 48%;
+    margin: 0 auto;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .card {
+    max-width: 350px;
+  }
+
+  .attribution {
+    margin: 1rem 1rem;
+  }
+}
 .attribution {
   font-size: 11px;
   text-align: center;
